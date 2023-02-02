@@ -1,2 +1,2 @@
-# Peter Alcazar SQL Portfolio
+# Peter Alcazar's SQL Portfolio
 #### Welcome to my SQL portfolio! This code repository contains examples of SQL I've written. Feel free to take a look and reach out if you have any questions. Peterralcazar@gmail.com
