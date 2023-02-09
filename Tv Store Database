@@ -1,0 +1,26 @@
+--Create a store database
+
+CREATE TABLE Store (SKU INTEGER PRIMARY KEY, Brand TEXT, Price INTEGER, Quantity INTEGER, Year INTEGER);
+
+INSERT INTO Store VALUES (3459443, "Samsung", 500, 4, 2022);
+INSERT INTO Store VALUES (4888439, "LG", 800, 30, 2023);
+INSERT INTO Store VALUES (8383833, "Sony", 1600, 4, 2023);
+INSERT INTO Store VALUES (3934848, "Roku", 700, 9, 2022);
+INSERT INTO Store VALUES (9944838, "Vizio", 400, 20, 2023);
+INSERT INTO Store Values (3048539, "LG", 2000, 43, 2023);
+INSERT INTO Store Values (2344345, "Samsung", 1800, 14, 2023);
+INSERT INTO Store Values (3482998, "Sony", 950,30, 2022);
+INSERT INTO Store Values (5938439, "Roku", 300, 40, 2022);
+INSERT INTO Store Values (0495843, "Vizio", 450, 23, 2023);
+INSERT INTO Store Values (4388393, "LG", 1200, 11, 2023);
+INSERT INTO Store Values (3747439, "Samsung", 740, 23, 2022);
+INSERT INTO Store Values (4749393, "Sony", 220, 21, 2020);
+INSERT INTO Store Values (7564993, "Roku", 750, 9, 2022);
+INSERT INTO Store Values (3547329, "LG", 840, 10, 2023);
+
+--Display databse order by highest price.
+SELECT * FROM Store
+ORDER BY price DESC;
+
+--How many Tvs are in the store?
+SELECT SUM (Quantity) FROM store
