@@ -2,7 +2,7 @@
 
 
 
-/* 1. How many orders were placed in January? * / 
+/* #1. How many orders were placed in January? * / 
 
 SELECT COUNT (orderid)
 FROM BIT_DB.JanSales
@@ -65,7 +65,7 @@ AND length(orderid) = 6
 AND orderid <> 'Order ID';
 
 
-/* 8. List all the products sold in Los Angeles in February, and include how many of each were sold. */
+/* #8. List all the products sold in Los Angeles in February, and include how many of each were sold. */
 
 SELECT Product,
        SUM(quantity) 
