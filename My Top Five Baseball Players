@@ -1,4 +1,4 @@
-/* Create table about the people and what they do here */
+/* Creating a table about my top 5 basball players */
 
 CREATE TABLE Legends (
     Rank INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -36,6 +36,22 @@ VALUES ("Ted Williams", "Red Sox", "Outfielder");
 INSERT INTO Legends (name,team,position)
 VALUES ("Frank Robinson", "Reds", "Outfielder");
 
+INSERT INTO Legends (name,team,position)
+VALUES ("Barry Bond", "Giants", "Outfielder");
+
+INSERT INTO Legends (name,team,position)
+VALUES ("Mike Piazza", "Athletics", "Catcher");
+
+INSERT INTO Legends (name,team,position)
+VALUES ("David Ortiz", "Boston", "Infielder");
+
+INSERT INTO Legends (name,team,position)
+VALUES ("Vladimir Guerrero", "Orioles", "Outfielder");
+
+INSERT INTO Legends (name,team,position)
+VALUES ("Mickey Mantle", "Yankees", "Outfielder");
+
+
 /* My Top Five */
 
 CREATE TABLE MyTopFive
@@ -53,9 +69,6 @@ CREATE TABLE MyTopFive
     INSERT INTO MyTopFive (name,hall_of_fame_year)
     VALUES ("Mariano Rivera", 2019);
     
-    INSERT INTO MyTopFive (name,hall_of_fame_year)
-    VALUES ("Hank Aaron", 1982);
- 
 
 /* Newest to oldest Hall of Fame*/
 
@@ -68,3 +81,10 @@ ORDER BY Hall_of_Fame_Year DESC;
 SELECT Team
 FROM Legends
 ORDER BY TEAM DESC;
+
+/* Players Rank Join */
+SELECT legends.rank
+AS RANK
+FROM Legends
+JOIN MyTopFive
+ON MyTopFive.Name = Legends.rank;
