@@ -1,0 +1,70 @@
+/* Create table about the people and what they do here */
+
+CREATE TABLE Legends (
+    Rank INTEGER PRIMARY KEY AUTOINCREMENT,
+    Name TEXT ,
+    Team TEXT,
+    Position TEXT);
+    
+INSERT INTO Legends (name,team,position)
+VALUES ("Babe Ruth", "Yankees", "Outfield");
+
+INSERT INTO Legends (name,team,position)
+VALUES ("Derek Jeter", "Yankees", "Shortstop");
+
+INSERT INTO Legends (name,team,position)
+VALUES ("Mariano Rivera", "Yankees", "Pitcher");
+
+INSERT INTO Legends (name,team,position)
+VALUES ("Jackie Robinson", "Dodgers", "Infielder");
+
+INSERT INTO Legends (name,team,position)
+VALUES ("Hank Aaron", "Brewers", "Outfielder");
+
+INSERT INTO Legends (name,team,position)
+VALUES ("Roberto Clemente", "Pirates", "Outfielder");
+
+INSERT INTO Legends (name,team,position)
+VALUES ("Mickey Mantle", "Yankees", "Outfielder");
+
+INSERT INTO Legends (name,team,position)
+VALUES ("Randy Johnson", "Diamondbacks", "Pitcher");
+
+INSERT INTO Legends (name,team,position)
+VALUES ("Ted Williams", "Red Sox", "Outfielder");
+
+INSERT INTO Legends (name,team,position)
+VALUES ("Frank Robinson", "Reds", "Outfielder");
+
+/* My Top Five */
+
+CREATE TABLE MyTopFive
+(Name TEXT, Hall_of_Fame_Year INTEGER);
+
+    INSERT INTO MyTopFive (name,hall_of_fame_year)
+    VALUES ("Babe Ruth", 1936);
+    
+    INSERT INTO MyTopFive (name,hall_of_fame_year)
+    VALUES ("Jackie Robinson", 2007);
+    
+    INSERT INTO MyTopFive (name,hall_of_fame_year)
+    VALUES ("Derek Jeter", 2020);
+    
+    INSERT INTO MyTopFive (name,hall_of_fame_year)
+    VALUES ("Mariano Rivera", 2019);
+    
+    INSERT INTO MyTopFive (name,hall_of_fame_year)
+    VALUES ("Hank Aaron", 1982);
+ 
+
+/* Newest to oldest Hall of Fame*/
+
+SELECT Hall_of_Fame_Year
+FROM MyTopFive 
+ORDER BY Hall_of_Fame_Year DESC;
+
+/* Team with most Hall of Fame"*/
+
+SELECT Team
+FROM Legends
+ORDER BY TEAM DESC:;
