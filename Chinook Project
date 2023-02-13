@@ -1,4 +1,4 @@
-# For my final SQL project, I devised five questions I sought to learn about the Chinook database.
+# For my this SQL project, I devised five questions I sought to learn about the Chinook database.
 
 -- 1.  Find the Invoices of customers who are from Brazil. The resulting table should show the customer's full name, Invoice ID, Date of the invoice, and billing country.                                                           
 
