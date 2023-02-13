@@ -1,4 +1,4 @@
-/* Put your data in here and query it! */
+/* In this project I wrote two queries for the Pokemon table. The first querie I grouped them by their defense and speed. For the second querie I grouped them by legendary. */
 
 CREATE TABLE pokemon(
   Number     INTEGER,
@@ -123,4 +123,5 @@ Speed,
 FROM pokemon AS p);
 
 /* Group by their Legendary */
-SELECT Number, Name, Generation, Legendary, Total FROM pokemon GROUP BY -1 * Legendary;
+SELECT Number, Name, Generation, Legendary, Total 
+FROM pokemon GROUP BY -1 * Legendary;
